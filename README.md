@@ -3,7 +3,7 @@
 
 A simple and stylish image carousel built with HTML, CSS, and JavaScript.
 
-![Image Carousel Demo](/demo.gif)
+![Image Carousel Demo](demo.gif)
 
 ## Features
 
