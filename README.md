@@ -18,12 +18,12 @@ A simple and stylish image carousel built with HTML, CSS, and JavaScript.
 
 
    git clone https://github.com/your-username/image-carousel.git
-   ```
+   
 
 2. Open the `index.html` file in your web browser.
 
 3. Click the "Next Pic" button to cycle through the images in the carousel.
-
+```
 ## Customization
 
 You can customize the image carousel by modifying the following:
