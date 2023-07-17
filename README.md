@@ -16,7 +16,7 @@ A simple and stylish image carousel built with HTML, CSS, and JavaScript.
 
 1. Clone the repository:
 
-   ```shell
+
    git clone https://github.com/your-username/image-carousel.git
    ```
 
@@ -38,9 +38,6 @@ You can customize the image carousel by modifying the following:
 - CSS
 - JavaScript
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ```
 
