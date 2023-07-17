@@ -30,7 +30,7 @@ You can customize the image carousel by modifying the following:
 
 - Add or remove images: Open the `index.html` file and update the `images` array with the desired image URLs.
 
-- Change the styling: Open the `styles.css` file to modify the visual appearance of the carousel.
+- Change the styling: Open the `<style>` file to modify the visual appearance of the carousel.
 
 ## Technologies Used
 
