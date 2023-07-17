@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950">
+    <div id="carousel" class="w-2/6 border-4 border-gray-400 flex flex-col items-center m-auto p-6 mt-8">
+        <img src="/imagecarousel/image1.jpg"  id="myImages" class="bg-clip-padding rounded-md width-4/6" alt="">
+        <br>
+        <button id="changeBtn" class="font-bold text-white uppercase">Next Pic</button>
+    </div>
+    <script>
+        // Get the necessary elements from the DOM
+        const imageElement = document.getElementById("myImages");
+        const changeButton = document.getElementById("changeBtn");
+
+        // Image URLs
+        const images = [
+          "/imagecarousel/image1.jpg",
+          "/imagecarousel/image2.jpg",
+          "/imagecarousel/image3.jpg"
+        ];
+
+        let currentIndex = 0;
+
+        // Event listener for the button
+        changeButton.addEventListener("click", function() {
+          currentIndex = (currentIndex + 1) % images.length;
+          
+          // Set the new image URL based on the current index
+          const newImageUrl = images[currentIndex];
+          imageElement.src = newImageUrl;
+
+          // Check if it's the last image, then go back to the first image
+          if (currentIndex === images.length - 1) {
+            changeButton.textContent = "Next Pic"; // Reset the button text
+            const nophoto = document.getElementById("carousel").querySelector("p.text-white-300");
+            if (nophoto) {
+              nophoto.remove(); // Remove the "New content" paragraph if it exists
+            }
+          }
+        });
+    </script>
+</body>
+</html>
